@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#EFEFEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/layout_one">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/ntu_logo"
+            android:id="@+id/imageView_logo_setting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:text="NTU Socials"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/imageView_logo_setting"
+            android:id="@+id/textView_main_head_setting"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView_main_head_setting"
+            android:layout_marginTop="10dp"
+            android:text="Settings Page"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ntu_logo"
+            android:layout_below="@+id/settings_title"
+            android:id="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/personalty_type"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:text="What's your personality type"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/personality_inputType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/personalty_type"
+            android:hint="please enter your personality type"
+            android:padding="10dp"
+            android:textSize="16dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:id="@+id/settings_question"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/personality_inputType"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:text="What do you like to do for fun?"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question_input"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:hint="Please enter your email"
+            android:layout_below="@+id/settings_question"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_input"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:padding="10dp"
+            android:text="Confirm Changes"
+            android:id="@+id/settings_confirm_btn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_confirm_btn"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:padding="10dp"
+            android:text="Back"
+            android:id="@+id/settings_back_btn"/>
+
+    </RelativeLayout>
+
+</ScrollView>

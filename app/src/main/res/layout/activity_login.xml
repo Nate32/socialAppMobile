@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#EFEFEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/ntu_logo"
+            android:id="@+id/imageView_logo_login"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:text="NTU Socials"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/imageView_logo_login"
+            android:id="@+id/textView_main_head_login"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+
+        <TextView
+            android:id="@+id/Login_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView_main_head_login"
+            android:layout_marginTop="10dp"
+            android:text="Please enter your details to login"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/Login_email"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Login_title"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:text="Email"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/Login_inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Login_email"
+            android:hint="please enter email"
+            android:padding="10dp"
+            android:textSize="16dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:id="@+id/Login_Password"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Login_inputEmail"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Password"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/Login_inputPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Login_Password"
+            android:background="@drawable/border"
+            android:hint="Please enter your email"
+            android:padding="10dp"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Login_inputPassword"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="70dp"
+            android:padding="10dp"
+            android:text="Login"
+            android:id="@+id/Login_user_button"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:visibility="gone"
+            android:elevation="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress_bar_login"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

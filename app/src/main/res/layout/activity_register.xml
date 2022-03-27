@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#EFEFEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/layout_one">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/ntu_logo"
+            android:id="@+id/profile_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:text="NTU Socials"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/profile_image"
+            android:id="@+id/textView_main_head"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView_main_head"
+            android:layout_marginTop="10dp"
+            android:text="Please enter your details to register"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/register_fullName"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/register_title"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:text="Full Name"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/register_inputName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/register_fullName"
+            android:hint="please enter full name"
+            android:padding="10dp"
+            android:textSize="16dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:id="@+id/register_email"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/register_fullName"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text="Email"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/register_inputEmail"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:hint="Please enter your email"
+            android:layout_below="@+id/register_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/register_age"
+            android:text="Age"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_below="@+id/register_inputEmail"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+
+        <EditText
+            android:id="@+id/register_inputAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/register_age"
+            android:hint="Please enter your age"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/register_gender"
+            android:text="Age"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_below="@+id/register_inputAge"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_gender_radio"
+            android:layout_below="@+id/register_gender"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="male"
+                android:textSize="15sp"
+                android:textColor="#555555"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:text="Female"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/register_password"
+            android:text="Password"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_below="@+id/register_gender_radio"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+
+        <EditText
+            android:id="@+id/register_inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/register_password"
+            android:background="@drawable/border"
+            android:hint="Please enter your password"
+            android:padding="10dp"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_inputPassword"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:padding="10dp"
+            android:text="Register"
+            android:id="@+id/register_user_button"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:elevation="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress_bar"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

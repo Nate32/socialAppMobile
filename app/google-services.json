@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669296329685",
+    "project_id": "ntusocials",
+    "storage_bucket": "ntusocials.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669296329685:android:03289a0f10db60f9c6335c",
+        "android_client_info": {
+          "package_name": "com.example.ntusocials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669296329685-go861jce174kih7v4mfkln4ik8dmo3l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqDsTczJYo2Lw_hV8oaH27AAC0esWovrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669296329685-go861jce174kih7v4mfkln4ik8dmo3l6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
